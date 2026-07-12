@@ -1,4 +1,4 @@
-# Powered Lift Wing & Thrust Plant Design
+# Powered Lift Wing & Propeller Design
 ### Inter IIT Tech Meet 14.0 | LAT Aerospace Problem Statement
 
 
