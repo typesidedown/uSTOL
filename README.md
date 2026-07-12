@@ -1,13 +1,16 @@
 # Powered Lift Wing & Thrust Plant Design
 ### Inter IIT Tech Meet 14.0 | LAT Aerospace Problem Statement
 
+
+
 ![Inter IIT](https://img.shields.io/badge/Inter%20IIT-Tech%20Meet%2014.0-blue?style=for-the-badge)
 ![LAT Aerospace](https://img.shields.io/badge/LAT-Aerospace-success?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![ANSYS Fluent](https://img.shields.io/badge/ANSYS-Fluent-FFB71B?style=for-the-badge)
+![OpenVSP](https://img.shields.io/badge/OpenVSP-Aircraft%20Design-blue?style=for-the-badge)
 ![XFOIL](https://img.shields.io/badge/XFOIL-Airfoil%20Analysis-red?style=for-the-badge)
-![CFD](https://img.shields.io/badge/CFD-Validated-blueviolet?style=for-the-badge)
-![BEMT](https://img.shields.io/badge/Blade%20Element-Momentum%20Theory-orange?style=for-the-badge)
+![Aerodynamics](https://img.shields.io/badge/Aerodynamics-STOL-green?style=for-the-badge)
+![BEMT](https://img.shields.io/badge/BEMT-Blade%20Element%20Momentum-orange?style=for-the-badge)
 ![Optimization](https://img.shields.io/badge/Constraint-Optimization-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
