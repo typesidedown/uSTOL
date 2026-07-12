@@ -32,6 +32,7 @@ Our solution combines:
 The entire design pipeline was built from first principles and validated using analytical models together with CFD simulations.
 
 ---
+![Wind Tunnel](Wind_tunnel.JPG)
 
 # Problem Statement
 
