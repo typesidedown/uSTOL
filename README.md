@@ -1,4 +1,166 @@
-# Project Structure
+# Powered Lift Wing & Thrust Plant Design
+### Inter IIT Tech Meet 14.0 | LAT Aerospace Problem Statement
+
+![Inter IIT](https://img.shields.io/badge/Inter%20IIT-Tech%20Meet%2014.0-blue?style=for-the-badge)
+![LAT Aerospace](https://img.shields.io/badge/LAT-Aerospace-success?style=for-the-badge)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![ANSYS Fluent](https://img.shields.io/badge/ANSYS-Fluent-FFB71B?style=for-the-badge)
+![XFOIL](https://img.shields.io/badge/XFOIL-Airfoil%20Analysis-red?style=for-the-badge)
+![CFD](https://img.shields.io/badge/CFD-Validated-blueviolet?style=for-the-badge)
+![BEMT](https://img.shields.io/badge/Blade%20Element-Momentum%20Theory-orange?style=for-the-badge)
+![Optimization](https://img.shields.io/badge/Constraint-Optimization-success?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+
+---
+
+## Overview
+
+This repository contains our complete solution to the **Powered Lift Wing & Thrust Plant Design** problem statement presented by **LAT Aerospace** during **Inter IIT Tech Meet 14.0**.
+
+The objective was to design an innovative powered-lift fixed-wing architecture capable of generating extremely high lift coefficients while maintaining efficient cruise performance for future **Short Take-Off and Landing (STOL)** aircraft.
+
+Our solution combines:
+
+- Distributed Electric Propulsion (DEP)
+- Blown Flap Technology
+- Mathematical Aerodynamic Modeling
+- Blade Element Momentum Theory (BEMT)
+- Computational Fluid Dynamics (CFD)
+- Structural Analysis
+- Numerical Optimization
+
+The entire design pipeline was built from first principles and validated using analytical models together with CFD simulations.
+
+---
+
+# Problem Statement
+
+Design a fixed-wing aircraft integrated with a thrust-producing system capable of generating exceptionally high lift coefficients while satisfying stringent performance constraints.
+
+Target metrics included:
+
+- Lift Coefficient (CL) ≥ **6.5**
+- Lift-to-Drag Ratio > **5** (Takeoff)
+- Lift-to-Drag Ratio > **20** (Cruise)
+- Minimum Lift = **15 kg @ 20 m/s**
+- Fixed-wing only
+- No Tilt Rotor
+- No VTOL
+- Powered Lift mandatory
+
+---
+
+# Our Approach
+
+Instead of directly selecting a conventional STOL configuration, we first performed a comparative study of several high-lift architectures.
+
+## Configurations Studied
+
+- Channel Wing
+- Prandtl-D (Bell Spanload)
+- Joined Wing
+- Distributed Electric Propulsion (DEP)
+- Blown Flaps
+- Electric Ducted Fans (EDF)
+- Open Propellers
+
+After evaluating aerodynamic performance, manufacturability, structural complexity, controllability, and safety, we selected:
+
+> **Distributed Electric Propulsion (DEP) with Blown Flaps**
+
+This architecture provided the best balance between
+
+- High Lift
+- Redundancy
+- Mechanical Simplicity
+- Cruise Efficiency
+- Control Authority
+
+---
+
+# Methodology
+
+The project was divided into multiple interconnected modules.
+
+## 1. Wing Design
+
+- Airfoil selection
+- Thin Airfoil Theory
+- Camber optimization
+- Flap modeling
+- Blown flap mathematical formulation
+- Finite wing corrections
+
+---
+
+## 2. Propulsion System
+
+A comparative analysis was performed between
+
+- Open Propellers
+- Electric Ducted Fans
+
+The propulsion model was developed using
+
+- Momentum Theory
+- Blade Element Theory
+- Blade Element Momentum Theory (BEMT)
+
+The mathematical model predicts
+
+- Thrust
+- Torque
+- Efficiency
+- Power Consumption
+
+The solver was validated against published NACA experimental datasets.
+
+---
+
+## 3. Numerical Optimization
+
+Custom Python solvers were developed for
+
+- Propeller optimization
+- Airfoil optimization
+- Blade geometry
+- Pitch distribution
+- Performance prediction
+
+Libraries used include
+
+- NumPy
+- SciPy
+- Matplotlib
+
+---
+
+## 4. Computational Fluid Dynamics
+
+CFD simulations were performed using **ANSYS Fluent** for
+
+- Propeller Validation
+- Wing Validation
+- Flap Performance
+- Blown Wing Analysis
+
+Studies included
+
+- Mesh Independence
+- Pressure Distribution
+- Velocity Contours
+- Streamlines
+- Lift & Drag Validation
+
+---
+
+## 5. Structural Analysis
+
+Structural feasibility of the wing was also analyzed to ensure the high-lift configuration remained mechanically practical.
+
+---
+
+# Repository Structure
 
 This repository contains tools for **Propulsion (BEMT/XFOIL-based propeller analysis)** and **Wing Aerodynamics (VLM/VSM/DEP studies)**.
 
@@ -79,6 +241,97 @@ Simulation of the optimal wing as described by the output of `wing/DEP_takeoff.p
 ## ⚙️ Setup & Usage (Basic)
 
 ```bash
+# Tools & Software
+
+| Tool | Purpose |
+|------|----------|
+| Python | Mathematical Modeling |
+| NumPy | Numerical Computation |
+| SciPy | Optimization |
+| Matplotlib | Visualization |
+| XFOIL | Airfoil Analysis |
+| ANSYS Fluent | CFD |
+| OpenVSP | Geometry Development |
+| AVL | Preliminary Stability Analysis |
+
+---
+
+# Highlights
+
+- Complete mathematical model for DEP-based STOL aircraft
+- Blade Element Momentum Theory implementation
+- Airfoil and flap analytical model
+- CFD validation of propulsion system
+- CFD validation of blown-wing concept
+- Structural feasibility analysis
+- Constraint optimization framework
+- Research-backed design decisions
+
+---
+
+# Results
+
+The proposed architecture successfully demonstrated
+
+- High lift capability through blown flaps
+- Efficient DEP-based propulsion
+- Good agreement between analytical models and CFD
+- Parameterized optimization framework for future improvements
+
+The workflow can be extended for
+
+- Aircraft optimization
+- Autonomous STOL vehicles
+- Regional Air Mobility (RAM)
+- Urban Air Mobility (UAM)
+
+---
+
+# Future Work
+
+- Multi-objective optimization
+- Wind tunnel validation
+- Aeroelastic analysis
+- Flight control integration
+- Reinforcement Learning assisted optimization
+- Multi-disciplinary Design Optimization (MDO)
+
+---
+
+# References
+
+This project builds upon literature including
+
+- Blade Element Momentum Theory
+- Thin Airfoil Theory
+- NASA STOL research
+- NACA Propeller Experiments
+- Distributed Electric Propulsion studies
+
+Complete references are available in the final report.
+
+---
+
+# Team
+
+**Team 99**
+
+Inter IIT Tech Meet 14.0
+
+Powered Lift Wing & Thrust Plant Design
+
+---
+
+## Acknowledgements
+
+We sincerely thank **LAT Aerospace** and the **Inter IIT Tech Meet 14.0 Organizing Committee** for presenting an open-ended engineering challenge that encouraged innovation in aerodynamics, propulsion, optimization, and computational analysis.
+
+---
+
+
+# Project Structure
+
+
 pip install -r requirements.txt
 cd propulsion
 python bemt_general_optimization.py
